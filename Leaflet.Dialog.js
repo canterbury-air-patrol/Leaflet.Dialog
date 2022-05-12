@@ -8,11 +8,11 @@ L.Control.Dialog = L.Control.extend({
     initOpen: true,
 	title: null,
 	iconClass: {
-		grabber: "fa fa-arrows",
-		close: "fa fa-times",
-		resize: "fa fa-arrows-h fa-rotate-45",
-		collapse: "fa caret-down",
-		expand: "fa caret-up",
+		grabber: "fa-solid fa-arrows-alt",
+		close: "fa-solid fa-times",
+		resize: "fa-solid fa-arrows-alt-h fa-rotate-45",
+		collapse: "fa-solid caret-down",
+		expand: "fa-solid caret-up",
 	}
   },
 
