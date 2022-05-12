@@ -17,7 +17,6 @@ L.Control.Dialog = L.Control.extend({
   },
 
   initialize: function(options) {
-    this.options = JSON.parse(JSON.stringify(this.options));
     L.setOptions(this, options);
 
     this._attributions = {};
