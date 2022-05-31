@@ -1,3 +1,6 @@
+import '@fortawesome/fontawesome-free';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 L.Control.Dialog = L.Control.extend({
   options: {
     size: [ 300, 300 ],

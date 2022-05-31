@@ -1,6 +1,6 @@
 {
-  "name": "leaflet-dialog",
-  "version": "1.0.5",
+  "name": "@canterbury-air-patrol/leaflet-dialog",
+  "version": "1.1.1",
   "description": "Resizable, movable dialog window for Leaflet",
   "devDependencies": {
     "leaflet": "~1.8.0",
@@ -12,7 +12,7 @@
   "main": "Leaflet.Dialog.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NBTSolutions/Leaflet.Dialog.git"
+    "url": "https://github.com/canterbury-air-patrol/Leaflet.Dialog.git"
   },
   "keywords": [
     "javascript",
@@ -23,6 +23,6 @@
     "modal",
     "window"
   ],
-  "author": "Nate Marquardt",
+  "author": "Scott Parlane",
   "readmeFilename": "README.md"
 }
