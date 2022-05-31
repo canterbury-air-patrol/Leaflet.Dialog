@@ -221,8 +221,9 @@ L.Control.Dialog = L.Control.extend({
       className + "-inner"
     ));
 
+    var grabberNode;
     if (this.options.title) {
-        var grabberNode = (this._resizerNode = L.DomUtil.create(
+        grabberNode = (this._resizerNode = L.DomUtil.create(
           "div",
           className + "-grabber-title"
         ));
@@ -262,7 +263,7 @@ L.Control.Dialog = L.Control.extend({
       className + "-resizer"
     ));
     var resizeIcon = L.DomUtil.create("i", this.options.iconClass.resize);
-    resizerNode.appendChild(resizeIcon)
+    resizerNode.appendChild(resizeIcon);
 
     L.DomEvent.on(resizerNode, "mousedown", this._handleResizeStart, this);
     L.DomEvent.on(resizerNode, "touchstart", this._handleTouchResizeStart, this);
