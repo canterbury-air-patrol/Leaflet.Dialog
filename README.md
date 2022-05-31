@@ -2,7 +2,7 @@
 
 A dialog modal window that is resizable and positionable on the map.
 
-[Check out the Demo Here](http://nbtsolutions.github.io/Leaflet.Dialog/)
+[Check out the Demo Here](http://canterbury-air-patrol.github.io/Leaflet.Dialog/)
 
 ## Installation:
 
