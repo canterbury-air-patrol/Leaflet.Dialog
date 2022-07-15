@@ -1,6 +1,6 @@
 {
   "name": "@canterbury-air-patrol/leaflet-dialog",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Resizable, movable dialog window for Leaflet",
   "devDependencies": {
     "eslint": "^8.19.0",
