@@ -3,13 +3,23 @@
   "version": "1.1.1",
   "description": "Resizable, movable dialog window for Leaflet",
   "devDependencies": {
-    "leaflet": "~1.8.0",
-    "jshint": "~2.13.0"
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "jshint": "~2.13.0",
+    "leaflet": "~1.8.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "~6.1.0"
+    "@fortawesome/fontawesome-free": "~6.1.0",
+    "esbuild": "^0.14.49"
   },
   "main": "Leaflet.Dialog.js",
+  "scripts": {
+    "check": "eslint .",
+    "build": "esbuild Leaflet.Dialog.js --outdir=out/ --minify"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/canterbury-air-patrol/Leaflet.Dialog.git"
