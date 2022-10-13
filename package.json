@@ -12,12 +12,15 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "~6.2.0",
-    "esbuild": "^0.15.3"
+    "esbuild": "^0.15.3",
+    "http-server": "^14.1.1",
+    "jquery": "^3.6.1"
   },
   "main": "Leaflet.Dialog.js",
   "scripts": {
     "check": "eslint .",
-    "build": "esbuild Leaflet.Dialog.js --outdir=out/ --minify"
+    "build": "esbuild dialog.js --outdir=out/ --loader:.woff2=file --loader:.ttf=file --bundle --minify",
+    "start": "http-server -a localhost -p 8000"
   },
   "repository": {
     "type": "git",
