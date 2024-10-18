@@ -7,7 +7,8 @@
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.1",
     "globals": "^15.11.0",
-    "leaflet": "~1.9.2"
+    "leaflet": "~1.9.2",
+    "prettier": "^3.3.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "~6.6.0",
@@ -17,7 +18,7 @@
   },
   "main": "Leaflet.Dialog.js",
   "scripts": {
-    "check": "eslint *.js",
+    "check": "eslint *.js && prettier -c *.js",
     "build": "esbuild dialog.js --outdir=out/ --loader:.woff2=file --loader:.ttf=file --bundle --minify",
     "start": "http-server -a localhost -p 8000"
   },
