@@ -221,17 +221,14 @@ L.Control.Dialog = L.Control.extend({
       .on(container, 'contextmenu', stop)
       .on(container, 'MozMousePixelScroll', stop)
 
-    const innerContainer = (this._innerContainer = L.DomUtil.create(
-      'div',
-      className + '-inner'
-    ))
+    const innerContainer = (this._innerContainer = L.DomUtil.create('div', className + '-inner'))
 
     let grabberNode = null
     if (this.options.title) {
-      grabberNode = (this._resizerNode = L.DomUtil.create('div', className + '-grabber-title'))
+      grabberNode = this._resizerNode = L.DomUtil.create('div', className + '-grabber-title')
       grabberNode.innerHTML = this.options.title
     } else {
-      grabberNode = (this._grabberNode = L.DomUtil.create('div', className + '-grabber'))
+      grabberNode = this._grabberNode = L.DomUtil.create('div', className + '-grabber')
       const grabberIcon = L.DomUtil.create('i', this.options.iconClass.grabber)
       grabberNode.appendChild(grabberIcon)
     }
@@ -239,38 +236,26 @@ L.Control.Dialog = L.Control.extend({
     L.DomEvent.on(grabberNode, 'mousedown', this._handleMoveStart, this)
     L.DomEvent.on(grabberNode, 'touchstart', this._handleTouchMoveStart, this)
 
-    const closeNode = (this._closeNode = L.DomUtil.create(
-      'div',
-      className + '-close'
-    ))
+    const closeNode = (this._closeNode = L.DomUtil.create('div', className + '-close'))
     const closeIcon = L.DomUtil.create('i', this.options.iconClass.close)
     closeNode.appendChild(closeIcon)
     L.DomEvent.on(closeNode, 'click', this._handleClose, this)
 
     L.DomEvent.on(grabberNode, 'mousedown', this._handleMoveStart, this)
 
-    const collapseNode = (this._collapse = L.DomUtil.create(
-      'div',
-      className + '-collapse'
-    ))
+    const collapseNode = (this._collapse = L.DomUtil.create('div', className + '-collapse'))
     this._collapseIcon = L.DomUtil.create('i', this.options.iconClass.collapse)
     collapseNode.appendChild(this._collapseIcon)
     L.DomEvent.on(collapseNode, 'click', this._handleCollapse, this)
 
-    const resizerNode = (this._resizerNode = L.DomUtil.create(
-      'div',
-      className + '-resizer'
-    ))
+    const resizerNode = (this._resizerNode = L.DomUtil.create('div', className + '-resizer'))
     const resizeIcon = L.DomUtil.create('i', this.options.iconClass.resize)
     resizerNode.appendChild(resizeIcon)
 
     L.DomEvent.on(resizerNode, 'mousedown', this._handleResizeStart, this)
     L.DomEvent.on(resizerNode, 'touchstart', this._handleTouchResizeStart, this)
 
-    const contentNode = (this._contentNode = L.DomUtil.create(
-      'div',
-      className + '-contents'
-    ))
+    const contentNode = (this._contentNode = L.DomUtil.create('div', className + '-contents'))
 
     container.appendChild(innerContainer)
 
