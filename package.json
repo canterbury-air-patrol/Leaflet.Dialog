@@ -4,7 +4,7 @@
   "description": "Resizable, movable dialog window for Leaflet",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.27.0",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.1",
     "globals": "^16.0.0",
