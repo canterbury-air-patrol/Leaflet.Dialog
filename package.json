@@ -7,7 +7,7 @@
     "esbuild": "^0.27.0",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.1",
-    "globals": "^16.0.0",
+    "globals": "^17.0.0",
     "http-server": "^14.1.1",
     "leaflet": "~1.9.2",
     "prettier": "^3.3.3"
